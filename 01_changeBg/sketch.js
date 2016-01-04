@@ -1,3 +1,5 @@
+// 背景色を変更
+
 var sample = []; //サウンドファイルの配列
 var animation; // 現在再生しているアニメーション
 
@@ -17,7 +19,7 @@ function setup() {
 // アニメーションを再生
 function draw() {
   background(0);
-  if(animation){
+  if (animation) {
     animation.draw();
   }
 }
@@ -47,35 +49,31 @@ function keyTyped() {
 // ------------------------------------------------------
 // Animation A
 function Anim_a() {
-}
-
-Anim_a.prototype.draw = function() {
-  background(255);
+  this.draw = function() {
+    background(255);
+  };
 };
 
 // ------------------------------------------------------
 // Animation S
 function Anim_s() {
-}
-
-Anim_s.prototype.draw = function() {
-  background(255, 0, 0);
+  this.draw = function() {
+    background(255, 0, 0);
+  };
 };
 
 // ------------------------------------------------------
 // Animation D
 function Anim_d() {
-}
-
-Anim_d.prototype.draw = function() {
-  background(0, 255, 0);
+  this.draw = function() {
+    background(0, 255, 0);
+  };
 };
 
 // ------------------------------------------------------
 // Animation F
 function Anim_f() {
-}
-
-Anim_f.prototype.draw = function() {
-  background(0, 0, 255);
+  this.draw = function() {
+    background(0, 0, 255);
+  };
 };

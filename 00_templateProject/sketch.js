@@ -1,3 +1,5 @@
+// 課題テンプレート
+
 var sample = []; //サウンドファイルの配列
 var animation; // 現在再生しているアニメーション
 
@@ -17,7 +19,7 @@ function setup() {
 // アニメーションを再生
 function draw() {
   background(0);
-  if(animation){
+  if (animation) {
     animation.draw();
   }
 }
@@ -44,42 +46,26 @@ function keyTyped() {
 
 // アニメーションを定義
 
-// ------------------------------------------------------
 // Animation A
 function Anim_a() {
-
+  this.draw = function() {
+  };
 }
 
-Anim_a.prototype.draw = function() {
-
-};
-
-// ------------------------------------------------------
 // Animation S
 function Anim_s() {
-
+  this.draw = function() {
+  };
 }
 
-Anim_s.prototype.draw = function() {
-
-};
-
-// ------------------------------------------------------
 // Animation D
 function Anim_d() {
-
+  this.draw = function() {
+  };
 }
 
-Anim_d.prototype.draw = function() {
-
-};
-
-// ------------------------------------------------------
 // Animation F
 function Anim_f() {
-
+  this.draw = function() {
+  };
 }
-
-Anim_f.prototype.draw = function() {
-
-};
